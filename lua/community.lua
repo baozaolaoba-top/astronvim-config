@@ -17,7 +17,6 @@ return {
   { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
   { import = "astrocommunity.quickfix.nvim-bqf" },
   { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" },
-  { import = "astrocommunity.recipes.telescope-lsp-mappings" },
   { import = "astrocommunity.recipes.neovide" },
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
   { import = "astrocommunity.project.project-nvim" },
