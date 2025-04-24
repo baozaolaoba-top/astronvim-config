@@ -19,7 +19,7 @@ return {
   { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" },
   { import = "astrocommunity.recipes.neovide" },
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
-  { import = "astrocommunity.project.project-nvim" },
+  -- { import = "astrocommunity.project.project-nvim" },
   { import = "astrocommunity.indent.indent-rainbowline" },
   -- import/override with your plugins folder
 }
