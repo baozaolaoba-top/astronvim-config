@@ -17,3 +17,36 @@ end
 
 require "lazy_setup"
 require "polish"
+
+
+if vim.g.neovide then
+  -- Put anything you want to happen only in Neovide here
+  -- vim.o.guifont = "Source Code Pro:h14" -- text below applies for VimScript
+  -- vim.g.neovide_text_gamma = 0.0
+  -- vim.g.neovide_text_contrast = 0.5
+
+  -- -- Helper function for transparency formatting
+  -- local alpha = function()
+  --   return string.format("%x", math.floor((255 * vim.g.transparency) or 0.8))
+  -- end
+  -- -- g:neovide_opacity should be 0 if you want to unify transparency of content and title bar.
+  -- vim.g.neovide_opacity = 0.0
+  -- vim.g.transparency = 0.8
+  -- vim.g.neovide_background_color = "#0f1117" .. alpha()
+  -- vim.g.neovide_normal_opacity = 0.8
+  vim.g.neovide_position_animation_length = 0.15
+  vim.g.neovide_scroll_animation_length = 0.3
+  vim.g.neovide_underline_stroke_scale = 1.0
+  vim.g.neovide_theme = 'auto'
+  vim.g.neovide_input_ime = true
+  vim.g.neovide_cursor_animation_length = 0.150
+  vim.g.neovide_cursor_short_animation_length = 0.04
+  vim.g.neovide_cursor_trail_size = 1.0
+  vim.g.neovide_cursor_animate_in_insert_mode = true
+  vim.g.neovide_cursor_vfx_mode = "sonicboom"
+  vim.g.neovide_cursor_vfx_opacity = 200.0
+  vim.g.neovide_cursor_vfx_particle_lifetime = 0.5
+  vim.g.neovide_cursor_vfx_particle_highlight_lifetime = 0.2
+  vim.g.neovide_cursor_vfx_particle_density = 0.7
+  vim.g.neovide_cursor_vfx_particle_speed = 10.0
+end
