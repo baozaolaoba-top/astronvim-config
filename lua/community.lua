@@ -21,5 +21,7 @@ return {
   { import = "astrocommunity.scrolling.neoscroll-nvim" },
   -- { import = "astrocommunity.project.project-nvim" },
   { import = "astrocommunity.indent.indent-rainbowline" },
+  { import = "astrocommunity.markdown-and-latex/render-markdown-nvim" },
+  { import = "astrocommunity.markdown-and-latex/markmap-nvim" },
   -- import/override with your plugins folder
 }
