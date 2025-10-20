@@ -43,10 +43,10 @@ if vim.g.neovide then
   vim.g.neovide_cursor_short_animation_length = 0.04
   vim.g.neovide_cursor_trail_size = 1.0
   vim.g.neovide_cursor_animate_in_insert_mode = true
-  vim.g.neovide_cursor_vfx_mode = "sonicboom"
-  vim.g.neovide_cursor_vfx_opacity = 200.0
-  vim.g.neovide_cursor_vfx_particle_lifetime = 0.5
-  vim.g.neovide_cursor_vfx_particle_highlight_lifetime = 0.2
-  vim.g.neovide_cursor_vfx_particle_density = 0.7
-  vim.g.neovide_cursor_vfx_particle_speed = 10.0
+  -- vim.g.neovide_cursor_vfx_mode = "sonicboom"
+  -- vim.g.neovide_cursor_vfx_opacity = 200.0
+  -- vim.g.neovide_cursor_vfx_particle_lifetime = 0.5
+  -- vim.g.neovide_cursor_vfx_particle_highlight_lifetime = 0.2
+  -- vim.g.neovide_cursor_vfx_particle_density = 0.7
+  -- vim.g.neovide_cursor_vfx_particle_speed = 10.0
 end
