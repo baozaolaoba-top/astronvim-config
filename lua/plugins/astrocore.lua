@@ -48,7 +48,8 @@ return {
         wrap = false, -- sets vim.opt.wrap
         guifont = "JetBrainsMono Nerd Font:h18:b:i",
         foldmethod = "expr",
-        foldexpr = "nvim_treesitter#foldexpr()"
+        foldexpr = "nvim_treesitter#foldexpr()",
+        colorcolumn = "80"
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)

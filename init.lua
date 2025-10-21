@@ -18,6 +18,14 @@ end
 require "lazy_setup"
 require "polish"
 
+-- 设置 ColorColumn 高亮组的背景色为红色
+vim.api.nvim_set_hl(0, "ColorColumn", {
+  -- guibg 用于 GUI 环境 (如 Neovim-qt, Alacritty)
+  bg = "#FF4444",    -- 一个醒目的红色 (可以使用任何十六进制颜色)
+  
+  -- ctermbg 用于终端环境 (如果终端支持 256 色，也可以用数字)
+  ctermbg = "Red",   -- 终端颜色名称 "Red"
+})
 
 if vim.g.neovide then
   -- Put anything you want to happen only in Neovide here
