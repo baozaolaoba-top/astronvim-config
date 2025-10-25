@@ -101,7 +101,7 @@ return {
         },
 
         -- 翻译
-        -- ["<C-e>"] = { ":Translate<cr>", desc = "翻译" },
+        ["<Leader>m"] = { ":Translate<cr>", desc = "翻译" },
 
         -- 书签
         ["<F2>"] = { ":VbookmarkNext<cr>", desc = "下个书签" },
@@ -112,7 +112,7 @@ return {
         ["|"] = { "@w", desc = "w宏" },
 
         -- rust 宏展开
-        ["<C-o>"] = { ":RustLsp expandMacro<cr>", desc = "rust 宏展开" },
+        ["<A-o>"] = { ":RustLsp expandMacro<cr>", desc = "rust 宏展开" },
 
       },
     },

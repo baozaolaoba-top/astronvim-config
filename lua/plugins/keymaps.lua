@@ -22,5 +22,3 @@ local opts = { noremap = true, silent = true }
 vim.api.nvim_set_keymap("n", "<C-S-V>", '"+p', opts) -- 普通模式粘贴
 vim.api.nvim_set_keymap("v", "<C-S-V>", '"+p', opts) -- 可视模式粘贴
 
--- Ctrl+W 翻译
-vim.keymap.set("n", "<C-w>", "<cmd>Translate<cr>", { desc = "翻译" })
