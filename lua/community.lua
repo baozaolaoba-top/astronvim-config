@@ -23,7 +23,7 @@ return {
   { import = "astrocommunity.indent.indent-rainbowline" },
   { import = "astrocommunity.markdown-and-latex/render-markdown-nvim" },
   { import = "astrocommunity.markdown-and-latex/markmap-nvim" },
-  { import = "astrocommunity.editing-support/rustowl" },
+  -- { import = "astrocommunity.editing-support/rustowl" },
   { import = "astrocommunity.lsp/nvim-lsp-endhints" },
   -- import/override with your plugins folder
 }
