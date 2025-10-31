@@ -24,6 +24,7 @@ return {
   { import = "astrocommunity.markdown-and-latex/render-markdown-nvim" },
   { import = "astrocommunity.markdown-and-latex/markmap-nvim" },
   -- { import = "astrocommunity.editing-support/rustowl" },
-  { import = "astrocommunity.lsp/nvim-lsp-endhints" },
+  -- 行尾显示hint的信息太少了，虽然不打断代码，但损失挺大的。
+  -- { import = "astrocommunity.lsp/nvim-lsp-endhints" },
   -- import/override with your plugins folder
 }
