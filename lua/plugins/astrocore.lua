@@ -113,5 +113,33 @@ return {
         ["<A-o>"] = { ":RustLsp expandMacro<cr>", desc = "rust 宏展开" },
       },
     },
+    git_worktrees = {
+      {
+        toplevel = vim.env.HOME,
+        gitdir = vim.env.HOME .. "/.dotfiles",
+      },
+    },
+    rooter = {
+      -- list of detectors in order of prevalence, elements can be:
+      --   "lsp" : lsp detection
+      --   string[] : a list of directory patterns to look for
+      --   fun(bufnr: integer): string|string[] : a function that takes a buffer
+      detector = {
+        "lsp", -- highest priority is getting workspace from running language se
+        { ".git", "_darcs", ".hg", ".bzr", ".svn", "src" }, -- next check for a
+        { "lua", "MakeFile", "package.json" }, -- lastly check for known project
+      },
+      -- ignore things from root detection
+      ignore = {
+        servers = {}, -- list of language server names to ignore (Ex. { "efm" })
+        dirs = {}, -- list of directory patterns (Ex. { "~/.cargo/*" })
+      },
+      -- automatically update working directory (update manually with `:AstroRoo
+      autochdir = true,
+      -- scope of working directory to change ("global"|"tab"|"win")
+      scope = "global",
+      -- show notification on every working directory change
+      notify = true,
+    },
   },
 }
